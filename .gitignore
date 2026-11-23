@@ -1,0 +1,5 @@
+node_modules/
+.env
+*.log
+.DS_Store
+OgrenciNo_AdSoyad_Lab1.pdf
