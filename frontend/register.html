@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kullanıcı Kayıt</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Hesap Oluştur</h1>
+    <p class="subtitle">Yeni bir hesap oluşturmak için bilgilerinizi girin.</p>
+    <form id="registerForm" novalidate>
+      <div class="field">
+        <label for="fullName">Ad Soyad</label>
+        <input id="fullName" name="fullName" type="text" required minlength="2" placeholder="Örn: Eren Biçimli" />
+      </div>
+      <div class="field">
+        <label for="email">E-posta</label>
+        <input id="email" name="email" type="email" required placeholder="ornek@mail.com" />
+      </div>
+      <div class="field">
+        <label for="password">Şifre</label>
+        <input id="password" name="password" type="password" required minlength="6" placeholder="En az 6 karakter" />
+      </div>
+      <div class="field">
+        <label for="confirmPassword">Şifre Tekrar</label>
+        <input id="confirmPassword" name="confirmPassword" type="password" required minlength="6" placeholder="Şifrenizi tekrar girin" />
+      </div>
+      <button type="submit">Kayıt Ol</button>
+      <div id="registerMessage" class="message" role="alert"></div>
+    </form>
+    <div class="links">
+      <a href="/login.html">Zaten hesabınız var mı? Giriş yap</a>
+      <a href="/index.html">Ana Sayfa</a>
+    </div>
+  </main>
+  <script src="/register.js"></script>
+</body>
+</html>
