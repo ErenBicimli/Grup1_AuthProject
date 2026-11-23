@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kullanıcı Giriş</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Giriş Yap</h1>
+    <p class="subtitle">Hesabınıza erişmek için e-posta ve şifrenizi girin.</p>
+    <form id="loginForm" novalidate>
+      <div class="field">
+        <label for="email">E-posta</label>
+        <input id="email" name="email" type="email" required placeholder="ornek@mail.com" />
+      </div>
+      <div class="field">
+        <label for="password">Şifre</label>
+        <input id="password" name="password" type="password" required placeholder="Şifreniz" />
+      </div>
+      <button type="submit">Giriş Yap</button>
+      <div id="loginMessage" class="message" role="alert"></div>
+    </form>
+    <div class="links">
+      <a href="/register.html">Hesap Oluştur</a>
+      <a href="/reset-password.html">Şifremi Unuttum</a>
+    </div>
+  </main>
+  <script src="/login.js"></script>
+</body>
+</html>
